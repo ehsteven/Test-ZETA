@@ -21,7 +21,7 @@ CREATE DATABASE e-commerce-tecno;
 
 4. Los usuarios son dos, un admin y un user normal para iniciar sesión en la página.
 ```
-La contrasaña de admin@admin es "admin"
+La contrasaña de admin@admin.com es "admin"
 Hay un usuario de prueba llamado "Paco" el correo es "Paco@gmail.com" y la contraseña es "paco1234"
 ```
 
