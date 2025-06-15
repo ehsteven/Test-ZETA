@@ -19,7 +19,7 @@ const Navbar = () => {
                             Panel Admin
                         </Link>
                     )}
-                    <Link href="/cart" className="relative text-gray-600 hover:text-blue-600 opacity-50 pointer-events-none select-none">
+                    <Link href="/cart" className="relative text-gray-600 hover:text-blue-600 ">
                         Carrito
                         {cartItems.length > 0 && (
                             <span className="absolute -top-2 -right-4 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
@@ -36,12 +36,9 @@ const Navbar = () => {
                             </button>
                         </div>
                     ) : (
-                        <div className="space-x-4 opacity-50 pointer-events-none select-none">
-                            <Link href="/login" className="text-gray-600 hover:text-blue-600">
+                        <div className="space-x-4">
+                            <Link href="/login" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">
                                 Iniciar Sesión
-                            </Link>
-                            <Link href="/register" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">
-                                Registrarse
                             </Link>
                         </div>
                     )}

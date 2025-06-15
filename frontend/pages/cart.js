@@ -44,7 +44,7 @@ export default function CartPage() {
                             </div>
                         </div>
                     ))}
-                    <div className="mt-6 text-right">
+                    <div className="mt-6 text-right opacity-50 pointer-events-none select-none">
                         <h2 className="text-2xl font-bold">Total: ${cartTotal.toFixed(2)}</h2>
                          <button className="bg-green-500 text-white px-6 py-3 rounded-lg mt-4 font-semibold hover:bg-green-600">
                             Proceder al Pago

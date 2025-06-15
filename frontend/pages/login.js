@@ -29,7 +29,6 @@ export default function LoginPage() {
               {...register('email', { required: 'El email es obligatorio' })}
               className="w-full p-2 border border-gray-300 rounded"
             />
-            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
           </div>
           <div className="mb-6">
             <label className="block text-gray-700 mb-2">Contraseña</label>
@@ -38,10 +37,9 @@ export default function LoginPage() {
               {...register('password', { required: 'La contraseña es obligatoria' })}
               className="w-full p-2 border border-gray-300 rounded"
             />
-            {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>}
           </div>
           <button type="submit" className="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600">
-            Entrar
+            Iniciar sesión
           </button>
         </form>
       </div>

@@ -44,20 +44,9 @@ export const AuthProvider = ({ children }) => {
     delete api.defaults.headers.Authorization;
     router.push('/login');
   };
-  
-  const register = async (username, email, password) => {
-     try {
-      await api.post('/auth/register', { username, email, password });
-      router.push('/login');
-    } catch (error) {
-       console.error("Error en el registro:", error.response?.data?.message || "Error de red");
-       throw new Error(error.response?.data?.message || "Error al registrarse");
-    }
-  };
-
 
   return (
-    <AuthContext.Provider value={{ user, token, login, logout, register, loading, isAuthenticated: !!token }}>
+    <AuthContext.Provider value={{ user, token, login, logout, loading, isAuthenticated: !!token }}>
       {!loading && children}
     </AuthContext.Provider>
   );
