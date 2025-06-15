@@ -19,6 +19,11 @@ CREATE DATABASE e-commerce-tecno;
 
 3. Conéctate a la base y ejecuta el script backend/database.sql para crear las tablas users y products y agregar algunos productos.
 
+```
+La contrasaña de admin@admin es "admin"
+Hay un usuario de prueba llamado "Paco" el correo es "Paco@gmail.com" y la contraseña es "paco1234"
+```
+
 ### 2. Configuración del Backend
 1. Ve a la carpeta backend:
 
