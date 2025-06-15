@@ -42,6 +42,21 @@ const getProducts = async (req, res) => {
   }
 };
 
+// Get products by id
+const getProductById = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const product = await db_products.query("SELECT * FROM products WHERE id = $1", [id]);
+        if (product.rows.length === 0) {
+            return res.status(404).json({ message: "Producto no encontrado." });
+        }
+        res.json(product.rows[0]);
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).json({ message: "Error del servidor" });
+    }
+};
+
 
 // Only admin
 // Create product
@@ -102,5 +117,5 @@ const deleteProduct = async (req, res) => {
     }
 };
 
-module.exports = { getProducts, createProduct, updateProduct, deleteProduct };
+module.exports = { getProducts, createProduct, getProductById, updateProduct, deleteProduct };
 

@@ -49,7 +49,7 @@ const AdminProductsPage = ({ products }) => {
                                         <p className="text-gray-900 whitespace-no-wrap">{product.stock}</p>
                                     </td>
                                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm text-right">
-                                        <Link href={`/admin/products/edit/${product.id}`} className="text-indigo-600 hover:text-indigo-900 mr-4 opacity-50 pointer-events-none select-none">
+                                        <Link href={`/admin/products/edit/${product.id}`} className="text-indigo-600 hover:text-indigo-900 mr-4">
                                             Editar
                                         </Link>
                                         <button onClick={() => handleDelete(product.id)} className="text-red-600 hover:text-red-900">

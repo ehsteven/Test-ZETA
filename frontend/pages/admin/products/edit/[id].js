@@ -32,7 +32,7 @@ export async function getServerSideProps({ params }) {
         const { data } = await api.get(`/products/${params.id}`);
         return { props: { product: data } };
     } catch (error) {
-        return { notFound: true }; // Si el producto no existe, muestra un 404
+        return { notFound: true };
     }
 }
 
