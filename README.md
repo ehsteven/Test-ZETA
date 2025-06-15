@@ -17,8 +17,9 @@
 CREATE DATABASE e-commerce-tecno; 
 ```
 
-3. Conéctate a la base y ejecuta el script backend/database.sql para crear las tablas users y products y agregar algunos productos.
+3. Conéctate a la base y ejecuta el script backend/database.sql para crear las tablas users y products y agregar algunos productos y usuarios.
 
+4. Los usuarios son dos, un admin y un user normal para iniciar sesión en la página.
 ```
 La contrasaña de admin@admin es "admin"
 Hay un usuario de prueba llamado "Paco" el correo es "Paco@gmail.com" y la contraseña es "paco1234"
